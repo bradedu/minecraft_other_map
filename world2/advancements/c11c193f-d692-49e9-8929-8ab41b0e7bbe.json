@@ -131,6 +131,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/light_gray_dye_from_gray_bonemeal": {
+    "criteria": {
+      "has_gray_dye": "2018-10-28 17:16:41 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/ladder": {
     "criteria": {
       "has_stick": "2018-10-10 13:32:57 +0800"
@@ -370,6 +376,7 @@
       "cooked_beef": "2018-10-20 21:27:48 +0800",
       "poisonous_potato": "2018-10-14 19:54:29 +0800",
       "rotten_flesh": "2018-10-10 13:45:12 +0800",
+      "cookie": "2018-10-28 17:18:39 +0800",
       "carrot": "2018-10-12 23:34:54 +0800"
     },
     "done": false
@@ -599,6 +606,12 @@
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_gravel": "2018-10-10 14:00:27 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/repeater": {
+    "criteria": {
+      "has_redstone_torch": "2018-10-28 16:36:09 +0800"
     },
     "done": true
   },

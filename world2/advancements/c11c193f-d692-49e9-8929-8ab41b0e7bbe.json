@@ -570,6 +570,7 @@
       "zombie": "2018-10-10 13:37:00 +0800",
       "silverfish": "2019-08-09 16:42:54 +0800",
       "witch": "2018-10-28 21:08:25 +0800",
+      "guardian": "2019-12-27 23:11:20 +0800",
       "spider": "2018-10-10 14:10:13 +0800",
       "ghast": "2019-03-02 17:00:24 +0800",
       "creeper": "2018-10-12 22:42:37 +0800",
@@ -871,6 +872,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sea_lantern": {
+    "criteria": {
+      "has_prismarine_crystals": "2019-12-27 23:11:32 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/jungle_planks": {
     "criteria": {
       "has_log": "2018-11-09 23:21:08 +0800"
@@ -964,6 +971,12 @@
   "minecraft:recipes/building_blocks/yellow_wool": {
     "criteria": {
       "has_white_wool": "2018-11-17 21:33:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_bricks": {
+    "criteria": {
+      "has_prismarine_shard": "2019-12-27 23:11:43 +0800"
     },
     "done": true
   },
@@ -1202,6 +1215,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2019-12-27 23:11:43 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/diamond": {
     "criteria": {
       "has_the_recipe": "2018-12-08 18:08:46 +0800"
@@ -1355,6 +1374,12 @@
   "minecraft:recipes/decorations/magenta_bed": {
     "criteria": {
       "has_magenta_wool": "2019-04-04 19:09:28 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2019-12-27 23:11:43 +0800"
     },
     "done": true
   },
@@ -2135,6 +2160,12 @@
   "minecraft:story/form_obsidian": {
     "criteria": {
       "obsidian": "2018-11-24 00:08:07 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magma": {
+    "criteria": {
+      "has_magma_cream": "2019-12-27 23:20:38 +0800"
     },
     "done": true
   },

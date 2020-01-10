@@ -299,6 +299,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/trapped_chest": {
+    "criteria": {
+      "has_tripwire_hook": "2019-05-18 08:10:32 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/hopper": {
     "criteria": {
       "has_iron_ingot": "2018-10-20 21:05:35 +0800"
@@ -656,6 +662,12 @@
   "minecraft:recipes/decorations/blue_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-11-16 23:12:14 +0800"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2019-04-26 23:10:47 +0800"
     },
     "done": true
   },
@@ -1452,6 +1464,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_beetroot": {
+    "criteria": {
+      "has_beetroot": "2019-05-03 23:28:18 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/gray_wool": {
     "criteria": {
       "has_white_wool": "2018-11-17 21:33:17 +0800"
@@ -1468,7 +1486,9 @@
     "criteria": {
       "cooked_mutton": "2019-04-12 21:46:54 +0800",
       "cooked_beef": "2018-10-20 21:27:48 +0800",
+      "porkchop": "2019-07-05 22:25:42 +0800",
       "poisonous_potato": "2018-10-14 19:54:29 +0800",
+      "mutton": "2019-05-03 22:41:47 +0800",
       "bread": "2019-03-02 17:29:58 +0800",
       "rotten_flesh": "2018-10-10 13:45:12 +0800",
       "cookie": "2018-10-28 17:18:39 +0800",
@@ -1632,6 +1652,12 @@
   "minecraft:recipes/transportation/minecart": {
     "criteria": {
       "has_iron_ingot": "2018-10-20 21:05:35 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/beetroot_soup": {
+    "criteria": {
+      "has_beetroot": "2019-05-03 23:28:18 +0800"
     },
     "done": true
   },

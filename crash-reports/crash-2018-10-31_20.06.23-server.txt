@@ -1,0 +1,351 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 2018/10/31 下午 8:06
+Description: Watching Server
+
+java.lang.Error
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at java.io.PrintStream.write(Unknown Source)
+	at org.apache.logging.log4j.core.util.CloseShieldOutputStream.write(CloseShieldOutputStream.java:53)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.writeToDestination(OutputStreamManager.java:256)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.flushBuffer(OutputStreamManager.java:288)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.flush(OutputStreamManager.java:297)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:179)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:170)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:161)
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:156)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:129)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:120)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:84)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:448)
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:433)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:417)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:403)
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:63)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:146)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2091)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:1988)
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1960)
+	at org.apache.logging.log4j.spi.AbstractLogger.info(AbstractLogger.java:1297)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:889)
+	at dh.a(SourceFile:123)
+	at bi.a(SourceFile:673)
+	at bi.a(SourceFile:668)
+	at cb.a(SourceFile:94)
+	at bj.a(SourceFile:92)
+	at bj.a(SourceFile:62)
+	at cf.a(SourceFile:76)
+	at bj.a(SourceFile:92)
+	at bj.a(SourceFile:62)
+	at cf.a(SourceFile:76)
+	at bj.a(SourceFile:92)
+	at bj.a(SourceFile:62)
+	at amj.a(SourceFile:125)
+	at apo.c(SourceFile:248)
+	at apo.a(SourceFile:120)
+	at apo.b(SourceFile:93)
+	at oo.a(SourceFile:641)
+	at oo.d(SourceFile:220)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:624)
+	at nz.D(SourceFile:349)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:560)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:464)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at java.io.PrintStream.write(Unknown Source)
+	at org.apache.logging.log4j.core.util.CloseShieldOutputStream.write(CloseShieldOutputStream.java:53)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.writeToDestination(OutputStreamManager.java:256)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.flushBuffer(OutputStreamManager.java:288)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.flush(OutputStreamManager.java:297)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:179)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:170)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:161)
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:156)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:129)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:120)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:84)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:448)
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:433)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:417)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:403)
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:63)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:146)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2091)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:1988)
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1960)
+	at org.apache.logging.log4j.spi.AbstractLogger.info(AbstractLogger.java:1297)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:889)
+	at dh.a(SourceFile:123)
+	at bi.a(SourceFile:673)
+	at bi.a(SourceFile:668)
+	at cb.a(SourceFile:94)
+	at bj.a(SourceFile:92)
+	at bj.a(SourceFile:62)
+	at cf.a(SourceFile:76)
+	at bj.a(SourceFile:92)
+	at bj.a(SourceFile:62)
+	at cf.a(SourceFile:76)
+	at bj.a(SourceFile:92)
+	at bj.a(SourceFile:62)
+	at amj.a(SourceFile:125)
+	at apo.c(SourceFile:248)
+	at apo.a(SourceFile:120)
+	at apo.b(SourceFile:93)
+	at oo.a(SourceFile:641)
+	at oo.d(SourceFile:220)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:624)
+	at nz.D(SourceFile:349)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:560)
+
+-- Thread Dump --
+Details:
+	Threads: "Netty Server IO #3" Id=40 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@51d0cbcd
+	-  locked java.util.Collections$UnmodifiableSet@5f173f87
+	-  locked sun.nio.ch.WindowsSelectorImpl@5b28a0bd
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Netty Server IO #2" Id=36 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@1e2a35bc
+	-  locked java.util.Collections$UnmodifiableSet@49730b17
+	-  locked sun.nio.ch.WindowsSelectorImpl@2ffeeeb9
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"threadDeathWatcher-2-1" Id=35 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at io.netty.util.ThreadDeathWatcher$Watcher.run(ThreadDeathWatcher.java:152)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #1" Id=34 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@314d8eb3
+	-  locked java.util.Collections$UnmodifiableSet@7e05caf3
+	-  locked sun.nio.ch.WindowsSelectorImpl@2fff5d97
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"File IO Thread" Id=33 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at bgx.c(SourceFile:51)
+	at bgx.run(SourceFile:30)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Server Watchdog" Id=31 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at oa.run(SourceFile:43)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #0" Id=30 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@77ace5f7
+	-  locked java.util.Collections$UnmodifiableSet@2a49c5a7
+	-  locked sun.nio.ch.WindowsSelectorImpl@7a4bd04f
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"D3D Screen Updater" Id=28 RUNNABLE (in native)
+	at sun.java2d.d3d.D3DRenderQueue.flushBuffer(Native Method)
+	at sun.java2d.d3d.D3DRenderQueue.flushBuffer(Unknown Source)
+	at sun.java2d.d3d.D3DRenderQueue.flushNow(Unknown Source)
+	at sun.java2d.d3d.D3DSurfaceData.swapBuffers(Unknown Source)
+	at sun.java2d.d3d.D3DScreenUpdateManager.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@2f0d3974
+
+
+"Server console handler" Id=27 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	-  locked java.io.BufferedInputStream@3f9ef23f
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	-  locked java.io.InputStreamReader@5b1e7c96
+	at java.io.InputStreamReader.read(Unknown Source)
+	...
+
+
+"DestroyJavaVM" Id=26 RUNNABLE
+
+
+"Server thread" Id=24 RUNNABLE
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	-  locked java.io.BufferedOutputStream@7f731612
+	at java.io.PrintStream.write(Unknown Source)
+	-  locked java.io.PrintStream@39735611
+	at org.apache.logging.log4j.core.util.CloseShieldOutputStream.write(CloseShieldOutputStream.java:53)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.writeToDestination(OutputStreamManager.java:256)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.flushBuffer(OutputStreamManager.java:288)
+	...
+
+
+"TimerQueue" Id=22 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3ec232ce
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3ec232ce
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.util.concurrent.DelayQueue.take(Unknown Source)
+	at javax.swing.TimerQueue.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@59666c76
+
+
+"Thread-3" Id=21 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1da238d9
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1da238d9
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.mojang.util.QueueLogAppender.getNextLogEvent(QueueLogAppender.java:77)
+	at oc$4.run(SourceFile:129)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"AWT-EventQueue-0" Id=19 RUNNABLE (in native)
+	at sun.awt.windows.WGlobalCursorManager.findHeavyweightUnderCursor(Native Method)
+	at sun.awt.GlobalCursorManager._updateCursor(Unknown Source)
+	at sun.awt.GlobalCursorManager.updateCursorImmediately(Unknown Source)
+	at sun.awt.windows.WComponentPeer.updateCursorImmediately(Unknown Source)
+	at java.awt.Component.updateCursorImmediately(Unknown Source)
+	at java.awt.Container.validate(Unknown Source)
+	at javax.swing.RepaintManager$3.run(Unknown Source)
+	at javax.swing.RepaintManager$3.run(Unknown Source)
+	...
+
+
+"AWT-Shutdown" Id=20 WAITING on java.lang.Object@4ee5ab63
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@4ee5ab63
+	at java.lang.Object.wait(Unknown Source)
+	at sun.awt.AWTAutoShutdown.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"AWT-Windows" Id=17 RUNNABLE
+	at sun.awt.windows.WToolkit.eventLoop(Native Method)
+	at sun.awt.windows.WToolkit.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Java2D Disposer" Id=15 WAITING on java.lang.ref.ReferenceQueue$Lock@240a6b15
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@240a6b15
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at sun.java2d.Disposer.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Server Infinisleeper" Id=14 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at nz$1.run(SourceFile:84)
+
+
+"Snooper Timer" Id=13 TIMED_WAITING on java.util.TaskQueue@bf17918
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@bf17918
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+
+"Attach Listener" Id=5 RUNNABLE
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@799fc4f
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@799fc4f
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@64c4e16c
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@64c4e16c
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+
+
+Stacktrace:
+	at oa.run(SourceFile:59)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2094330384 bytes (1997 MB) / 4294443008 bytes (4095 MB) up to 4294443008 bytes (4095 MB)
+	JVM Flags: 2 total; -Xms4G -Xmx4G
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 20; [oq['miemiesheep'/54850, l='world2', x=60.30, y=163.00, z=107.70]]
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)

@@ -397,6 +397,7 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "cooked_porkchop": "2018-12-07 22:58:12 +0800",
       "cooked_mutton": "2018-10-27 20:35:36 +0800",
       "cooked_beef": "2018-10-14 16:18:08 +0800",
       "apple": "2018-10-12 22:40:41 +0800",
@@ -1563,6 +1564,12 @@
   "minecraft:recipes/tools/compass": {
     "criteria": {
       "has_redstone": "2018-11-16 23:41:59 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/repeater": {
+    "criteria": {
+      "has_redstone_torch": "2018-12-01 22:46:09 +0800"
     },
     "done": true
   },

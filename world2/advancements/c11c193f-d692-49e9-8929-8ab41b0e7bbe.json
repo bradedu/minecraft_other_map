@@ -41,6 +41,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/pillar_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2019-03-02 17:31:48 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_sword": {
     "criteria": {
       "has_iron_ingot": "2018-10-20 21:05:35 +0800"
@@ -239,6 +245,12 @@
     },
     "done": true
   },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_chestplate": "2019-03-02 17:04:22 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_concrete_powder": {
     "criteria": {
       "has_gravel": "2018-10-10 14:00:27 +0800"
@@ -248,6 +260,12 @@
   "minecraft:recipes/decorations/magenta_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-11-16 23:12:14 +0800"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2019-03-02 17:34:21 +0800"
     },
     "done": true
   },
@@ -393,6 +411,7 @@
     "criteria": {
       "cooked_beef": "2018-10-20 21:27:48 +0800",
       "poisonous_potato": "2018-10-14 19:54:29 +0800",
+      "bread": "2019-03-02 17:29:58 +0800",
       "rotten_flesh": "2018-10-10 13:45:12 +0800",
       "cookie": "2018-10-28 17:18:39 +0800",
       "carrot": "2018-10-12 23:34:54 +0800"
@@ -549,6 +568,12 @@
     },
     "done": true
   },
+  "minecraft:nether/get_wither_skull": {
+    "criteria": {
+      "wither_skull": "2019-03-02 17:07:25 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/emerald": {
     "criteria": {
       "has_the_recipe": "2018-11-19 19:38:59 +0800"
@@ -654,6 +679,12 @@
     },
     "done": true
   },
+  "minecraft:nether/return_to_sender": {
+    "criteria": {
+      "killed_ghast": "2019-03-02 17:19:58 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/cauldron": {
     "criteria": {
       "has_water_bucket": "2018-10-10 13:39:59 +0800"
@@ -675,6 +706,12 @@
   "minecraft:recipes/decorations/gray_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-11-16 23:12:14 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/armor_stand": {
+    "criteria": {
+      "has_stone_slab": "2019-03-02 18:12:32 +0800"
     },
     "done": true
   },
@@ -765,6 +802,12 @@
   "minecraft:recipes/building_blocks/oak_stairs": {
     "criteria": {
       "has_planks": "2018-10-10 16:02:58 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs": {
+    "criteria": {
+      "has_quartz_block": "2019-03-02 17:31:48 +0800"
     },
     "done": true
   },
@@ -892,11 +935,15 @@
     "criteria": {
       "zombie_pigman": "2018-11-24 20:11:15 +0800",
       "shulker": "2019-02-03 23:28:33 +0800",
+      "wither_skeleton": "2019-03-02 17:02:30 +0800",
       "zombie_villager": "2018-10-13 22:37:48 +0800",
+      "slime": "2019-03-02 16:48:55 +0800",
+      "vindicator": "2019-03-02 17:06:50 +0800",
       "skeleton": "2018-10-10 13:59:27 +0800",
       "zombie": "2018-10-10 13:37:00 +0800",
       "witch": "2018-10-28 21:08:25 +0800",
       "spider": "2018-10-10 14:10:13 +0800",
+      "ghast": "2019-03-02 17:00:24 +0800",
       "creeper": "2018-10-12 22:42:37 +0800",
       "enderman": "2018-10-20 20:28:14 +0800"
     },
@@ -959,6 +1006,18 @@
   "minecraft:recipes/building_blocks/spruce_stairs": {
     "criteria": {
       "has_planks": "2018-11-24 20:29:28 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
+    "criteria": {
+      "has_red_flower": "2019-03-15 22:09:53 +0800"
+    },
+    "done": true
+  },
+  "minecraft:nether/uneasy_alliance": {
+    "criteria": {
+      "killed_ghast": "2019-03-02 17:00:24 +0800"
     },
     "done": true
   },
@@ -1190,9 +1249,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_slab": {
+    "criteria": {
+      "has_quartz_block": "2019-03-02 17:31:48 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_stained_glass": {
     "criteria": {
       "has_glass": "2018-11-16 23:12:14 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_red_flower": "2019-03-15 22:09:51 +0800"
     },
     "done": true
   },
@@ -1397,6 +1468,12 @@
   "minecraft:recipes/building_blocks/blue_stained_hardened_clay": {
     "criteria": {
       "has_hardened_clay": "2018-10-20 20:13:10 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2019-03-02 17:31:48 +0800"
     },
     "done": true
   },
@@ -1890,6 +1967,12 @@
   "minecraft:recipes/building_blocks/red_wool": {
     "criteria": {
       "has_white_wool": "2018-11-17 21:33:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_oxeye_daisy": {
+    "criteria": {
+      "has_red_flower": "2019-03-15 22:10:16 +0800"
     },
     "done": true
   },

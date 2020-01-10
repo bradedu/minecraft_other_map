@@ -71,6 +71,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone": {
+    "criteria": {
+      "has_vine": "2018-12-08 21:33:30 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/wheat": {
     "criteria": {
       "has_the_recipe": "2018-10-12 23:33:16 +0800"
@@ -131,6 +137,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pumpkin_seeds": {
+    "criteria": {
+      "has_pumpkin": "2019-01-11 23:09:25 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
       "has_planks": "2018-10-10 16:02:58 +0800"
@@ -170,6 +182,12 @@
   "minecraft:recipes/redstone/trapdoor": {
     "criteria": {
       "has_planks": "2018-10-10 16:02:58 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/melon_seeds": {
+    "criteria": {
+      "has_melon": "2019-01-11 23:03:33 +0800"
     },
     "done": true
   },
@@ -414,6 +432,12 @@
   "minecraft:recipes/misc/bucket": {
     "criteria": {
       "has_iron_ingot": "2018-10-20 21:05:35 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/speckled_melon": {
+    "criteria": {
+      "has_melon": "2019-01-11 23:03:33 +0800"
     },
     "done": true
   },
@@ -883,6 +907,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/ender_eye": {
+    "criteria": {
+      "has_blaze_powder": "2018-12-29 23:28:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:story/enchant_item": {
     "criteria": {
       "enchanted_item": "2018-11-22 00:53:12 +0800"
@@ -982,6 +1012,12 @@
   "minecraft:recipes/combat/diamond_helmet": {
     "criteria": {
       "has_diamond": "2018-10-26 23:18:26 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_the_recipe": "2018-12-08 19:12:17 +0800"
     },
     "done": true
   },
@@ -1327,6 +1363,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2018-12-29 23:28:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/tripwire_hook": {
     "criteria": {
       "has_string": "2018-10-10 14:10:14 +0800"
@@ -1483,6 +1525,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2018-12-29 23:28:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:nether/obtain_blaze_rod": {
     "criteria": {
       "blaze_rod": "2018-10-10 13:44:05 +0800"
@@ -1498,6 +1546,12 @@
   "minecraft:recipes/building_blocks/quartz_block": {
     "criteria": {
       "has_quartz": "2018-11-24 00:14:47 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/magma_cream": {
+    "criteria": {
+      "has_blaze_powder": "2018-12-29 23:28:23 +0800"
     },
     "done": true
   },
@@ -1604,6 +1658,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2018-12-08 21:17:56 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/magenta_stained_hardened_clay": {
     "criteria": {
       "has_hardened_clay": "2018-10-20 20:13:10 +0800"
@@ -1640,6 +1700,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_at_least_9_diamond": "2018-12-08 18:08:46 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "entered_water": "2018-10-10 13:40:17 +0800"
@@ -1655,6 +1721,12 @@
   "minecraft:recipes/redstone/daylight_detector": {
     "criteria": {
       "has_quartz": "2018-11-24 00:14:47 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/pumpkin_pie": {
+    "criteria": {
+      "has_pumpkin": "2019-01-11 23:09:25 +0800"
     },
     "done": true
   },
@@ -1679,6 +1751,12 @@
   "minecraft:recipes/building_blocks/lapis_block": {
     "criteria": {
       "has_at_least_9_lapis": "2018-11-23 23:46:39 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lit_pumpkin": {
+    "criteria": {
+      "has_pumpkin": "2019-01-11 23:09:25 +0800"
     },
     "done": true
   },
@@ -1724,6 +1802,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/melon_block": {
+    "criteria": {
+      "has_melon": "2019-01-11 23:03:33 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stone_stairs": {
     "criteria": {
       "has_cobblestone": "2018-10-10 13:40:17 +0800"
@@ -1745,6 +1829,18 @@
   "minecraft:recipes/decorations/brown_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-11-16 23:12:14 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cookie": {
+    "criteria": {
+      "has_cocoa": "2018-12-29 23:28:23 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_the_recipe": "2018-12-08 18:08:46 +0800"
     },
     "done": true
   },
@@ -1793,6 +1889,12 @@
   "minecraft:recipes/tools/stone_axe": {
     "criteria": {
       "has_cobblestone": "2018-10-10 13:40:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/fire_charge": {
+    "criteria": {
+      "has_blaze_powder": "2018-12-29 23:28:23 +0800"
     },
     "done": true
   },
